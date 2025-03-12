@@ -1,0 +1,45 @@
+body{
+    background-color:black;
+    color:white;
+    font-family: Arial;
+}
+.title{
+    font-size:40px;
+    font-weight: bold;
+}
+
+.move-icon{
+    height:50px;
+    
+}
+
+.css-button{
+    height:120px;
+    width:120px;
+    background-color: black;
+    border-color: white;
+    border-width:3px;
+    border-radius:60px;
+    border-style: solid;
+    margin-right:10px;
+    margin-bottom:50px;
+
+}
+
+.reset{
+    display:block;
+    padding : 10px;
+    font-family:Arial;
+    font-size:15px;
+}
+
+.css-result{
+    font-size:30px;
+    font-style: bold;
+    font-weight:700;
+}
+
+.css-moves{
+    margin-bottom:50px;
+    font-size:18px;
+}

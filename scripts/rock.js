@@ -90,6 +90,29 @@ function updatescore(){
     `wins : ${score.wins} , Lose : ${score.lose} , Tie : ${score.tie}`;
 }
 
+let isautoplaying = false;
+let intervalid ;
+
+function autoplay(){
+if(!isautoplaying)
+{
+        intervalid = setInterval(function(){
+           const playermove = pickcomputerguess();
+           playerguess(playermove);
+        } , 1000)
+    
+    isautoplaying = true;
+    
+
+}
+else
+{
+    clearInterval(intervalid )
+    isautoplaying=false;
+}
+}
+
+
 
 function pickcomputerguess(){
             const randomnumber = Math.random();
